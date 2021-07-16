@@ -59,18 +59,18 @@ function App() {
         </form>
         <h2>My ToDos</h2>
         {toDos.map((todo, i) => {
-          const todoClasses = []
+          let todoClasses = ""
 
           if (todo.complete) {
-            todoClasses.push("line-through");
+            todoClasses= "line-through";
           }
 
           return (
             <div className="dos" key={i}>
               <input onChange={(e) => {
                 markedComplete(i);
-              }} checked={todo.cpmplete} type="checkbox" />
-              <span className={todoClasses.join(" ")}>{todo.text}</span>
+              }} checked={todo.complete} type="checkbox" />
+              <span className={todoClasses}>{todo.text}</span>
               <div><button className="delete" onClick={(e) => {
                 TodoDelete(i);
               }}>Delete</button>
