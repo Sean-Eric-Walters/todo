@@ -73,7 +73,7 @@ function App() {
               <span className={todoClasses.join(" ")}>{todo.text}</span>
               <div><button className="delete" onClick={(e) => {
                 TodoDelete(i);
-              }}>Delet</button>
+              }}>Delete</button>
               </div>
             </div>
           );
