@@ -75,7 +75,7 @@ function App() {
                 TodoDelete(i);
               }}>Delete</button>
               </div>
-            </div>
+          </div>
           );
         })}
       </div>
